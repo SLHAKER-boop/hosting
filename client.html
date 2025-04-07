@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support Widget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Button to open the widget -->
+    <button id="openWidget" class="widget-btn">💬 Chat</button>
+
+    <!-- Widget Popup -->
+    <div id="widget" class="widget">
+        <div class="widget-header">
+            <span>Customer Support</span>
+            <button id="closeWidget" class="close-btn">×</button>
+        </div>
+        <div id="chatContainer" class="chat-container">
+            <!-- AI responses will go here -->
+        </div>
+        <!-- Input and Send button in one line -->
+        <div class="input-container">
+            <textarea id="userInput" placeholder="Ask something..." autofocus></textarea>
+            <button id="sendQuestion" class="send-btn">
+                <img src="https://img.icons8.com/ios/50/000000/send.png" alt="send icon" class="send-icon"> <!-- Send icon -->
+            </button>
+        </div>
+    </div>
+
+    <script src="widget.js"></script>
+</body>
+</html>
