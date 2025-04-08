@@ -1,3 +1,11 @@
+document.getElementById('openWidget').addEventListener('click', () => {
+    document.getElementById('widget').classList.add('open');  // This will make the widget visible
+});
+
+// You can also add functionality to close the widget
+document.getElementById('closeWidget').addEventListener('click', () => {
+    document.getElementById('widget').classList.remove('open');  // This will hide the widget
+});
 // widget.js - Client-Side JavaScript
 
 document.getElementById('sendQuestion').addEventListener('click', async () => {
